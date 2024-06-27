@@ -70,6 +70,12 @@ a:hover {
     text-align: left;
 }
 
+.projects {
+    max-width: 600px;
+    margin-left: 60px; 
+    text-align: left;
+}
+
 footer {
     width: 100%;
     display: flex;
