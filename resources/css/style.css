@@ -11,12 +11,12 @@ body {
 
 h1 {
     font-size: 40px;
-    margin-bottom: 10px; /* Reduce margin to bring the paragraph closer */
+    margin-bottom: 10px; 
 }
 
 p {
-    font-size: 15px;
-    margin-top: 0; /* Remove top margin to bring it closer to the heading */
+    font-size: 16px;
+    margin-top: 0; 
 }
 
 #light {
@@ -85,26 +85,73 @@ a:hover {
     text-align: left;
 }
 
-#parent {
-    display: block;
-    overflow: hidden; 
-    border-radius: 30px;
-}
-
 #cancer-analysis-pic img {
+    overflow: hidden;
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out; /* Smooth transition for the zoom effect */
+    transition: transform 0.5s ease-in-out; 
 }
 
 #cancer-analysis-pic img:hover {
-    transform: scale(1.1); /* Zoom the image content */
+    transform: scale(102%); 
 }
 
-footer {
-    width: 100%;
+.connect-form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: 60px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.connect {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 60px;
+    margin-bottom: 20px; 
+}
+
+.contact-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.contact-inputs{
+    width: 400px;
+    height: 15px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.contact-info textarea {
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 10px;
+}
+
+.contact-inputs::placeholder {
+    color: #a9a9a9;
+}
+
+.contact-info button {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #f9f6ee;
+    gap: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #121212;
 }
