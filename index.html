@@ -4,22 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./resources/css/style.css">
+        <link rel="stylesheet" href="./resources/css/mediaqueries.css">
         <title>J.</title>
     </head>
     <body>
         <header>
-            <nav id="header">
-                <div class="logo">J.</div>
-                <ul class="nav-links">
-                    <li><a href="about.html">about</a></li>
-                    <li><a href="https://drive.google.com/file/d/1X5a6W3lGpyDnjsS_e-FkPqidMnZYw_D3/view?usp=drive_link" target="_blank">resume</a></li>
-                    <li><a href="https://www.linkedin.com/in/jennydang8/" target="_blank">linkedin</a></li>
-                    <li><a href="https://github.com/jennydang61" target="_blank">github</a></li>
+            <div class="logo">J.</div>
+            <div class="hamburger-nav" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <li>
+                        <a onclick="toggleMenu()" href="about.html">about</a>
+                    </li>
+                    <li>
+                        <a onclick="toggleMenu()" href="https://drive.google.com/file/d/1X5a6W3lGpyDnjsS_e-FkPqidMnZYw_D3/view?usp=drive_link" target="_blank">resume</a>
+                    </li>
+                    <li>
+                        <a onclick="toggleMenu()" href="https://www.linkedin.com/in/jennydang8/" target="_blank">linkedin</a>
+                    </li>
+                    <li>
+                        <a onclick="toggleMenu()" href="https://github.com/jennydang61" target="_blank">github</a>
+                    </li>
                 </ul> 
-            </nav>  
+            </nav> 
         </header>
+
         <main class="container">
-            <section class="hero">
+            <section id="hero">
                 <h1>hi! it's jenny, a computer science student, <span id="light">transforming raw data into impactful solutions, one analysis at a time.</span></h1>
                 <p>scroll to explore</p>
             </section>
@@ -53,5 +68,6 @@
                 </form>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>
