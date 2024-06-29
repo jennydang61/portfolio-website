@@ -88,18 +88,21 @@ a:hover {
     max-width: 1000px;
     height: 70vh;
     padding-left: 100px;
+    animation: fade-up 0.5s;
 }
 
 .project-one {
     margin-bottom: 80px;
     text-align: center;
     max-width: 100%;
+    animation: fade-up 0.5s;
 }
 
 .project-two {
     margin-bottom: 80px;
     text-align: center;
     max-width: 100%;
+    animation: fade-up 0.5s;
 }
 
 #cancer-analysis-pic img {
@@ -125,6 +128,7 @@ a:hover {
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 30px;
+    animation: fade-up 0.5s;
 }
 
 .contact-left {
@@ -178,4 +182,16 @@ a:hover {
     justify-content: center;
     font-size: 50px;
     margin-top: 280px;
+}
+
+
+@keyframes fade-up { 
+    0% {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px) scale(1);
+    }
 }
