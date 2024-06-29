@@ -1,3 +1,9 @@
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
     header {
         padding: 0 50px;
@@ -12,7 +18,7 @@
     .hamburger-nav .line {
         width: 25px;
         height: 2px;
-        background:#f9f6ee;
+        background: #f9f6ee;
         margin: 6px 0;
     }
 
@@ -47,17 +53,113 @@
     
     .nav-bar ul li a {
         margin-bottom: 12px;
-    
     }
 
-    .hamburger-nav.open .line:nth-child(2){
+    .hamburger-nav.open .line:nth-child(2) {
         opacity: 0;
     }
-    .hamburger-nav.open .line:nth-child(1){
+    .hamburger-nav.open .line:nth-child(1) {
         transform: translateY(8px) rotate(-45deg);
     }
-    .hamburger-nav.open .line:nth-child(3){
+    .hamburger-nav.open .line:nth-child(3) {
         transform: translateY(-8px) rotate(45deg);
     }
 
+    .container {
+        display: block;
+
+    }
+
+    .connect-form-wrapper {
+        display: block;
+    }
+}
+/* mediaqueries.css */
+
+/* Small devices (phones, less than 767px) */
+@media only screen and (max-width: 767px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .container {
+        padding-top: 100px;
+        padding-left: 30px;
+        text-align: left;
+        height: 65vh;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .connect-form-wrapper {
+        padding-left: 30px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+    header {
+        padding: 0 50px;
+    }
+
+    .container {
+        padding-top: 150px;
+        padding-left: 50px;
+        text-align: left;
+        
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .connect-form-wrapper {
+        padding-left: 50px;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+}
+
+/* Large devices (desktops, 1064px and up) */
+@media only screen and (min-width: 1064px) {
+    header {
+        padding: 0 100px;
+    }
+
+    .container {
+        padding-left: 100px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .connect-form-wrapper {
+        padding-left: 100px;
+    }
+
+    .contact-info {
+        width: 500px;
+    }
 }
