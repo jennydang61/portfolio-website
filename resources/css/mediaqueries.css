@@ -85,6 +85,7 @@
 
     .container {
         padding-top: 100px;
+        padding-bottom: 100px;
         padding-left: 30px;
         text-align: left;
         height: 65vh;
